@@ -27,6 +27,8 @@ TARGETCXXFLAGS =
 
 # Directory containing the source to sdcc
 SDCCDIR = $(TOPDIR)/sdcc
+# Directory containing the source to maccer
+MACCERDIR = $(TOPDIR)/maccer
 # Directory containing the source to gbdk-lib
 GBDKLIBDIR = $(TOPDIR)/gbdk-lib
 # Directory containing the source to gbdk-support
@@ -50,7 +52,7 @@ NOISELOG = $(TOPDIR)/noise.log
 
 all: native-build
 
-clean: sdcc-clean gbdk-support-clean gbdk-lib-clean
+clean: sdcc-clean maccer-clean gbdk-support-clean gbdk-lib-clean
 
 distclean: clean build-dir-clean
 
@@ -92,7 +94,7 @@ src: clean
 	tar czf gbdk-$(VER).tar.gz gbdk
 
 # Base rules
-gbdk-build: sdcc-build gbdk-support-build gbdk-lib-build 
+gbdk-build: sdcc-build maccer-build gbdk-support-build gbdk-lib-build 
 
 gbdk-install: sdcc-install gbdk-support-install gbdk-lib-install
 
@@ -148,6 +150,13 @@ sdcc-install: sdcc-build build-bin-dir
 sdcc-clean:
 	-$(MAKE) -C $(SDCCDIR) distclean
 	touch $(SDCCDIR)/doc/holder.pdf
+
+# Rules for maccer
+maccer-build:
+	$(MAKE) -C $(MACCERDIR)
+
+maccer-clean:
+	$(MAKE) -C $(MACCERDIR) clean
 
 # Rules for gbdk-support
 gbdk-support-build:
