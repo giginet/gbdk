@@ -46,7 +46,7 @@ void count()                     ;
 int process_pragma(char *);
 #undef yywrap
 
-int yywrap YY_PROTO((void))
+int yywrap (void)
 {
    return(1);
 }
