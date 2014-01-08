@@ -1,0 +1,17 @@
+--- sdcc/support/cpp2/configure.orig	2014-01-08 21:54:41.000000000 +0900
++++ sdcc/support/cpp2/configure	2014-01-08 21:55:14.000000000 +0900
+@@ -3417,14 +3417,10 @@
+ s%@symbolic_link@%$symbolic_link%g
+ s%@thread_file@%$thread_file%g
+ s%@c_target_objs@%$c_target_objs%g
+-/@target_overrides@/r $target_overrides
+ s%@target_overrides@%%g
+-/@host_overrides@/r $host_overrides
+ s%@host_overrides@%%g
+ s%@cross_defines@%$cross_defines%g
+-/@cross_overrides@/r $cross_overrides
+ s%@cross_overrides@%%g
+-/@build_overrides@/r $build_overrides
+ s%@build_overrides@%%g
+ 
+ CEOF
