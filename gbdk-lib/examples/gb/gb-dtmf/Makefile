@@ -1,4 +1,4 @@
-CC	= ../../../bin/lcc -Wa-l -Wl-m -DGBDK_2_COMPAT=1
+CC	= ../../../../gbdk-support/lcc/lcc -Wa-l -Wl-m -DGBDK_2_COMPAT=1
 
 BINS	= gb-dtmf.gb
 

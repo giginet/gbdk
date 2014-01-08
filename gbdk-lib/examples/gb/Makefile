@@ -1,4 +1,4 @@
-CC	= ../../bin/lcc -Wa-l -Wl-m -Wl-j
+CC	= ../../../gbdk-support/lcc/lcc -Wa-l -Wl-m -Wl-j
 
 BINS	= galaxy.gb \
 	space.gb \
