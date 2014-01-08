@@ -400,8 +400,8 @@ getmap(d)
  *		will be updated.
  */
 
-int
-getline()
+ssize_t
+getline(char ** __restrict_c, size_t * restrict_n, FILE * restrict_f)
 {
 register int i;
 

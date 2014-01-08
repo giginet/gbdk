@@ -470,8 +470,8 @@ getmap(d)
  *		opened and closed sequentially scanning each in turn.
  */
 
-int
-getline()
+ssize_t
+getline(char ** __restrict_c, size_t * __restrict_n, FILE * __restrict_f)
 {
 	register int ftype;
 	register char *fid;

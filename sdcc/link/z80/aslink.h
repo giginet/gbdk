@@ -635,7 +635,7 @@ extern	char		endline();
 extern	char		get();
 extern	VOID		getfid();
 extern	VOID		getid();
-extern	int		getline();
+extern	ssize_t		getline(char ** __restrict, size_t * restrict, FILE * restrict);
 extern	int		getmap();
 extern	char		getnb();
 extern	int		more();

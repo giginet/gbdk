@@ -398,8 +398,8 @@ getmap(d)
  *		will be updated.
  */
 
-int
-getline()
+ssize_t
+getline(char ** __restrict_c, size_t * restrict_n, FILE * restrict_f)
 {
 loop:	if (incfil >= 0) {
 		if (fgets(ib, sizeof ib, ifp[incfil]) == NULL) {
