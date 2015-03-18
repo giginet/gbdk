@@ -1002,7 +1002,7 @@ pointer
 		     DCL_TYPE($3) = EEPPOINTER;
 		     break;
 		 default:
-		     break;
+		     ;
 		 }
 	     }
 	     else 
