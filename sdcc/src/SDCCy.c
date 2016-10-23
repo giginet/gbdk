@@ -2496,6 +2496,7 @@ case 173:
 		 default:
 		   // this could be just "constant" 
 		   // werror(W_PTR_TYPE_INVALID);
+		     break;
 		 }
 	     }
 	     else 
