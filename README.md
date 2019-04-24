@@ -1,5 +1,12 @@
 # GBDK
 
+```console
+$ export GBDKDIR=`pwd`/build/ppc-unknown-linux2.2/gbdk/
+$ make
+$ cd build/ppc-unknown-linux2.2/gbdk/examples/gb
+$ make
+```
+
 Patched GBDK 2.96a for the latest compilers.
 
 Original site:
